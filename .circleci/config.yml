@@ -42,6 +42,10 @@ jobs:
 
     steps:
       - checkout
+      
+      - run:
+          name: update-composer
+          command: composer self-update --2
 
       - run:
           # Set TERMINUS_ENV and related environment variables.
